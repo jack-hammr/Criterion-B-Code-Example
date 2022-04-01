@@ -1,0 +1,100 @@
+<html>
+  <head>
+      <style>
+        .tab
+          {
+            background-color:blueviolet;
+        }
+
+        .tab button 
+          {
+            background-color:blueviolet;
+        }
+
+        .tab button:hover
+          {
+          background-color: violet;
+        }
+
+        .hide
+          {
+          display: none;
+        }
+        .show
+          {
+          display: active;
+        }
+        
+        #button
+          {
+            font-size: 40;
+        }
+        #buttons
+         {
+          margin-right: 1102
+        }
+        #tab1
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            margin-right: 1102
+        }
+        #tab2
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            margin-right: 1102
+        }
+        
+        #tab3
+          {
+            font-size: 40;
+            background-color: blueviolet;
+            margin-right: 1102
+        }
+        #body
+          {
+            background-color: cyan;
+        }
+      </style>
+  </head>
+  <body id="body">
+      <div id="buttons" class="tab">
+        <button id="button"  onClick="changeTab1()">MTG</button>
+        <button id="button"  onClick="changeTab2()">YGH</button>
+        <button id="button"  onClick="changeTab3()">PMN</button>
+      </div>
+      
+      <div id="tab1" class="shows">
+          Magic: the Gathering is an amazing card game
+      </div>
+      
+      <div id="tab2" class="hide">
+        Yugioh is a bad card game
+      </div>
+      
+      <div id="tab3" class="hide">
+        Pokemon is an okay card game
+      </div>
+  </body>
+  <script>
+    function changeTab1() 
+      {
+      document.getElementById("tab1").className = "show";
+      document.getElementById("tab2").className = "hide";
+      document.getElementById("tab3").className = "hide";
+    }
+    function changeTab2() 
+      {
+      document.getElementById("tab1").className = "hide";
+      document.getElementById("tab2").className = "show";
+      document.getElementById("tab3").className = "hide";
+    }
+    function changeTab3() 
+      {
+      document.getElementById("tab1").className = "hide";
+      document.getElementById("tab2").className = "hide";
+      document.getElementById("tab3").className = "show";
+    }
+  </script>
+</html>
